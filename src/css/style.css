@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+:root {
+    --main-colour: #f7b9ba;
+    --main-back: #010104;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    background-color: var(--main-back);
+    color: #EBE9FC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    height: 40vh;
+    /* border-radius: 50%; */
+    mask-image: radial-gradient(circle at center, black 20%, transparent 90%);
+
+}
+
+#hero {
+    padding-top: 50px;
+    height: 85vh;
+    text-align: center;
+    background-color: var(--main-colour);
+}
+
+.wave {
+    position: absolute;
+    bottom: 15vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave .shape-fill {
+    fill: var(--main-back);
+}
+
+#why-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-split {
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 30vw;
+    padding: 15px;
+}
+
+.emoji {
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
